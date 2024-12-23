@@ -36,3 +36,7 @@ Run the project locally with Oracle database. Have a Oracle database running loc
 ### Prerequisites
 
 Spring security knowledge
+
+### Contact
+snarinderpal040@gmail.com
++1 289-952-6243
