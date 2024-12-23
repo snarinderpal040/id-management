@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: tenanto-demo
+
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 103058032889-hc4fb7r2vqk3o9dei7og2vru8ofc8rpu.apps.googleusercontent.com
+            client-secret: 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
+          facebook:
+            client-id: 549106048112026
+            client-secret: 47244d4f9008d7bca433fee9822c1e8e
+
+  jpa:
+    database: oracle
+    show-sql: true
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+    hibernate:
+      ddl-auto: none
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    username: c##test1
+    password: password
+    url: jdbc:oracle:thin:@//oracledb:1521/ORCLCDB
+
+server:
+  port: 8080
+
