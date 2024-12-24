@@ -7,11 +7,11 @@ spring:
       client:
         registration:
           google:
-            client-id: 103058032889-hc4fb7r2vqk3o9dei7og2vru8ofc8rpu.apps.googleusercontent.com
-            client-secret: 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
+            client-id: 
+            client-secret: 
           facebook:
-            client-id: 549106048112026
-            client-secret: 47244d4f9008d7bca433fee9822c1e8e
+            client-id: 
+            client-secret: 
 
   jpa:
     database: oracle
