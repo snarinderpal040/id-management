@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TenantoDemoApplication {
+public class TenantoIdManagement {
 
     public static void main(String[] args) {
-        SpringApplication.run(TenantoDemoApplication.class, args);
+        SpringApplication.run(TenantoIdManagement.class, args);
     }
 
 }
