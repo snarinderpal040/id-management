@@ -24,8 +24,8 @@ spring:
       ddl-auto: none
   datasource:
     driver-class-name: oracle.jdbc.driver.OracleDriver
-    username: c##test1
-    password: password
+    username: 
+    password: 
     url: jdbc:oracle:thin:@//oracledb:1521/ORCLCDB
 
 server:
