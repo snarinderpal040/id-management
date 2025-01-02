@@ -9,7 +9,7 @@
 
 ## About the Project
 
-This project provides a user interface to login to Tenanto application. It also provides an option to login with Facebook or Google. Once the customer signup with facebook or google the customer details will be stored in the local database.
+This project provides a user interface to login to an application. It also provides an option to login with Facebook or Google. Once the customer signup with facebook or google the customer details will be stored in the local database.
 
 This project uses
 1. Spring security

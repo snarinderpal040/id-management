@@ -1,6 +1,6 @@
-package com.narinder.tenantodemo.services;
+package com.narinder.identity.services;
 
-import com.narinder.tenantodemo.models.FacebookUser;
+import com.narinder.identity.models.FacebookUser;
 import org.springframework.security.oauth2.client.userinfo.DefaultOAuth2UserService;
 import org.springframework.security.oauth2.client.userinfo.OAuth2UserRequest;
 import org.springframework.security.oauth2.client.userinfo.OAuth2UserService;

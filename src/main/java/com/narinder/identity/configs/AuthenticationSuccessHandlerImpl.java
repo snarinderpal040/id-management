@@ -1,8 +1,8 @@
-package com.narinder.tenantodemo.configs;
+package com.narinder.identity.configs;
 
-import com.narinder.tenantodemo.entities.OAuth2TenantoUserDeatils;
-import com.narinder.tenantodemo.models.FacebookUser;
-import com.narinder.tenantodemo.models.TenantoOidcUser;
+import com.narinder.identity.entities.OAuth2AppUserDeatils;
+import com.narinder.identity.models.FacebookUser;
+import com.narinder.identity.models.AppOidcUser;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -11,16 +11,16 @@ import org.springframework.security.oauth2.client.authentication.OAuth2Authentic
 import org.springframework.security.oauth2.core.oidc.user.OidcUser;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 import org.springframework.stereotype.Component;
-import com.narinder.tenantodemo.repositories.OAuth2TenantoUsersRepository;
+import com.narinder.identity.repositories.OAuth2AppUsersRepository;
 
 import java.io.IOException;
 
 @Component
 public class AuthenticationSuccessHandlerImpl implements AuthenticationSuccessHandler {
 
-    private final OAuth2TenantoUsersRepository repository;
+    private final OAuth2AppUsersRepository repository;
 
-    public AuthenticationSuccessHandlerImpl(OAuth2TenantoUsersRepository repository) {
+    public AuthenticationSuccessHandlerImpl(OAuth2AppUsersRepository repository) {
         this.repository = repository;
     }
 
@@ -47,19 +47,19 @@ public class AuthenticationSuccessHandlerImpl implements AuthenticationSuccessHa
             }
 
             if(oAuth2AuthenticationToken.getPrincipal() instanceof OidcUser) {
-                TenantoOidcUser tenantoOidcUser = (TenantoOidcUser) oAuth2AuthenticationToken.getPrincipal();
-                firstName = tenantoOidcUser.getGivenName();
-                lastName = tenantoOidcUser.getFamilyName();
-                email = tenantoOidcUser.getEmail();
+                AppOidcUser appOidcUser = (AppOidcUser) oAuth2AuthenticationToken.getPrincipal();
+                firstName = appOidcUser.getGivenName();
+                lastName = appOidcUser.getFamilyName();
+                email = appOidcUser.getEmail();
             }
 
-            OAuth2TenantoUserDeatils oAuth2TenantoUserDeatils = new OAuth2TenantoUserDeatils();
-            oAuth2TenantoUserDeatils.setSub(subject);
-            oAuth2TenantoUserDeatils.setEmail(email);
-            oAuth2TenantoUserDeatils.setFirstName(firstName);
-            oAuth2TenantoUserDeatils.setLastName(lastName);
+            OAuth2AppUserDeatils oAuth2AppUserDeatils = new OAuth2AppUserDeatils();
+            oAuth2AppUserDeatils.setSub(subject);
+            oAuth2AppUserDeatils.setEmail(email);
+            oAuth2AppUserDeatils.setFirstName(firstName);
+            oAuth2AppUserDeatils.setLastName(lastName);
 
-            repository.save(oAuth2TenantoUserDeatils);
+            repository.save(oAuth2AppUserDeatils);
         }
     }
 

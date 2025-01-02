@@ -1,4 +1,4 @@
-package com.narinder.tenantodemo.entities;
+package com.narinder.identity.entities;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -7,7 +7,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "TenantoOAuth2Users")
-public class OAuth2TenantoUserDeatils {
+public class OAuth2AppUserDeatils {
 
     @Id
     @Column(name = "subject")
@@ -22,7 +22,7 @@ public class OAuth2TenantoUserDeatils {
     @Column(name = "lastName", nullable = false)
     private String lastName;
 
-    public OAuth2TenantoUserDeatils() {}
+    public OAuth2AppUserDeatils() {}
 
     public String getSub() {
         return sub;

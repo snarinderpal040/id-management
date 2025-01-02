@@ -1,4 +1,4 @@
-package com.narinder.tenantodemo.entities;
+package com.narinder.identity.entities;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -13,7 +13,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "Tenanto_Users")
-public class TenantoUserDetails implements UserDetails {
+public class AppUserDetails implements UserDetails {
 
     @Id
     @Column(name = "email")

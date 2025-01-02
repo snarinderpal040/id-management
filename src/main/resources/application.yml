@@ -1,17 +1,17 @@
 spring:
   application:
-    name: tenanto-demo
+    name: identity-management-app
 
   security:
     oauth2:
       client:
         registration:
-          google:
-            client-id: 
-            client-secret: 
-          facebook:
-            client-id: 
-            client-secret: 
+#          google:
+#            client-id:
+#            client-secret:
+#          facebook:
+#            client-id:
+#            client-secret:
 
   jpa:
     database: oracle

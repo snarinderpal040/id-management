@@ -1,13 +1,13 @@
-package com.narinder.tenantodemo;
+package com.narinder.identity;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TenantoIdManagement {
+public class IdManagement {
 
     public static void main(String[] args) {
-        SpringApplication.run(TenantoIdManagement.class, args);
+        SpringApplication.run(IdManagement.class, args);
     }
 
 }

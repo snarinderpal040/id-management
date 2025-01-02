@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.narinder</groupId>
-    <artifactId>tenanto</artifactId>
+    <artifactId>identity</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>tenanto-identity-management</name>
-    <description>Registration and login to Tenanto App</description>
+    <name>identity-management-app</name>
+    <description>Registration and login for users</description>
     <url/>
     <licenses>
         <license/>

@@ -1,6 +1,6 @@
-package com.narinder.tenantodemo.configs;
+package com.narinder.identity.configs;
 
-import com.narinder.tenantodemo.services.CustomUserDetailsService;
+import com.narinder.identity.services.CustomUserDetailsService;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

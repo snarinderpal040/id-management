@@ -1,8 +1,8 @@
-package com.narinder.tenantodemo.controllers;
+package com.narinder.identity.controllers;
 
-import com.narinder.tenantodemo.models.RegistrationRequest;
-import com.narinder.tenantodemo.models.RegistrationResponse;
-import com.narinder.tenantodemo.services.RegistrationService;
+import com.narinder.identity.models.RegistrationRequest;
+import com.narinder.identity.models.RegistrationResponse;
+import com.narinder.identity.services.RegistrationService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

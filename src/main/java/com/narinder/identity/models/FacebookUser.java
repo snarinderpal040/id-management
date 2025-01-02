@@ -1,4 +1,4 @@
-package com.narinder.tenantodemo.models;
+package com.narinder.identity.models;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.AuthorityUtils;

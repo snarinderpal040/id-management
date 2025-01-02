@@ -1,7 +1,7 @@
-package com.narinder.tenantodemo.services;
+package com.narinder.identity.services;
 
-import com.narinder.tenantodemo.entities.TenantoUserDetails;
-import com.narinder.tenantodemo.repositories.CustomUserRepository;
+import com.narinder.identity.entities.AppUserDetails;
+import com.narinder.identity.repositories.CustomUserRepository;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -20,7 +20,7 @@ public class CustomUserDetailsService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        Optional<TenantoUserDetails> byId = customUserRepository.findById(username);
+        Optional<AppUserDetails> byId = customUserRepository.findById(username);
         if(byId.isPresent()) {
             return byId.get();
         }

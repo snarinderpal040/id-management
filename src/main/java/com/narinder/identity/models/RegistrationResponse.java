@@ -1,4 +1,4 @@
-package com.narinder.tenantodemo.models;
+package com.narinder.identity.models;
 
 
 public class RegistrationResponse {

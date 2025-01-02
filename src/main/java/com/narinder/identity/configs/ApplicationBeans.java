@@ -1,4 +1,4 @@
-package com.narinder.tenantodemo.configs;
+package com.narinder.identity.configs;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

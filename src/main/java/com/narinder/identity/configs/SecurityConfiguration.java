@@ -1,7 +1,7 @@
-package com.narinder.tenantodemo.configs;
+package com.narinder.identity.configs;
 
-import com.narinder.tenantodemo.services.CustomOAuth2UserService;
-import com.narinder.tenantodemo.services.TenantoOidcUserService;
+import com.narinder.identity.services.CustomOAuth2UserService;
+import com.narinder.identity.services.AppOidcUserService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.Customizer;
@@ -35,7 +35,7 @@ public class SecurityConfiguration {
                         .defaultSuccessUrl("/myInfo", true)
                         .userInfoEndpoint(config -> config
                                         .userService(customOAuth2UserService)
-                                        .oidcUserService(new TenantoOidcUserService())
+                                        .oidcUserService(new AppOidcUserService())
                         )
                 ).csrf(AbstractHttpConfigurer::disable)
                 .build();
