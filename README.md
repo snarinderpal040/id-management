@@ -1,4 +1,4 @@
-# tenanto-identity-management
+# id-management
 
 ## Table of contents
 - [About the Project](#about-the-project)
